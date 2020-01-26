@@ -8,7 +8,7 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["gunicorn", "-b :8080 main:APP"]
+ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]
 
-CMD ["gunicorn", "-b", ":8080", "main:APP"]
+#CMD ["gunicorn", "-b", ":8080", "main:APP"]
 
